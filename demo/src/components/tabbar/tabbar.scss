@@ -1,0 +1,32 @@
+
+.tabbar{
+    position: fixed;
+    z-index: 40;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    background-color: #ffffff;
+    border: #f1f1f1 solid 0.0625rem;
+}
+.tabbar-main{
+    display: flex;
+       justify-content: space-around;
+}
+.tabbar-item{
+   flex-direction: column;
+
+}
+.tabbar-text{
+    flex: 1;
+    text-align: center;
+    font-family:-apple-system-font,"Helvetica Neue",sans-serif;
+    font-size: 1.06933rem;
+}
+.tabbar-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.bgcolor{
+    background-color: #f5f5f8;
+}

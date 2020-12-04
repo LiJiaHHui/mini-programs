@@ -1,0 +1,124 @@
+.user-index-page{
+    display: flex;
+    flex-direction: column;
+    color: #3e3e3e;
+    background: #f9f9f9;
+    margin-bottom: 5rem;
+}
+.user-info-card{
+    // margin-bottom: .04133rem;
+    margin:0 1rem  1.04133rem;
+    border-radius: 1.42667rem;
+    overflow: hidden;
+    padding:1.64rem 0;
+    background-color: #fff;
+}
+.member-info-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.81067rem 0;
+    margin: 0 1.06933rem 0;
+    .member-img{
+        width: 6.375rem;
+        height: 6.375rem;
+    }
+    .member-name{
+        font-weight: 700;
+        font-size: 1.85333rem;
+        color: #3e3e3e;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+}
+.order-box{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.order-box-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        .order-box-title{
+        font-weight: 700;
+        font-size: 1.72533rem;
+        color: #222;
+        margin-left: 1.5rem;
+        }
+        .order-box-view-all{
+            font-weight: 700;
+            font-size: 1.29733rem;
+            color: #808086;
+            margin-right: 1.5rem;
+            .order-box-view-all-icon{
+                margin-left: 0.625rem ;
+                width: 0.625rem;
+                height: 1rem;
+            }
+        }
+    }
+
+
+
+.order-box-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 1rem ;
+    .order-menu-item{
+        display: flex;
+        flex-direction: column;
+        // margin: 1rem 0 3rem 0;
+        margin-top: 1rem;
+        text-align: center;
+        .order-menu-item-icon{
+            width: 2.4375rem;
+            height: 2.4375rem;
+        }
+        .order-menu-item-text{
+            margin-top: 0.256rem;
+            font-weight: 700;
+            font-size: 1.29733rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+.my-services{
+    display: flex;
+    flex-direction: column;
+    .my-services-header{
+        font-weight: 700;
+        font-size: 1.72533rem;
+        color: #222;
+        margin-left: 1.5rem;
+    }
+    .service-main{
+        display: flex;
+        flex-direction: column;
+        // margin: 1rem 0 3rem 0;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        align-items: flex-start;
+        text-align: center;
+        .service-item-icon{
+            width: 3.25rem;
+            height: 3.25rem;
+        }
+        .service-item-name{
+            margin-top: 0.256rem;
+            font-weight: 700;
+            font-size: 1.29733rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
