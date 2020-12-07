@@ -93,6 +93,7 @@ module.exports = function (webpackEnv) {
 
   const shouldUseReactRefresh = env.raw.FAST_REFRESH;
 
+  
   // common function to get style loaders
   const getStyleLoaders = (cssOptions, preProcessor) => {
     const loaders = [
@@ -106,12 +107,10 @@ module.exports = function (webpackEnv) {
           : {},
       },
     //   {
-
     //     test:/\.scss$/,
-    
     //     loaders:['style-loader','css-loader','sass-loader'],
-    
     // },
+    
       {
         loader: require.resolve('css-loader'),
         options: cssOptions,
@@ -361,6 +360,9 @@ module.exports = function (webpackEnv) {
         PnpWebpackPlugin.moduleLoader(module),
       ],
     },
+    // externals:{
+    //     'QMap':'qq.maps'
+    //   },
     module: {
       strictExportPresence: true,
       rules: [
