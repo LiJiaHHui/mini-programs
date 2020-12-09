@@ -25,7 +25,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
+    <script type="text/javascript" 
+    src="https://apis.map.qq.com/tools/geolocation/min?key=UQPBZ-RCU36-K2YS3-EMV6Y-JI6JJ-3WBUM&referer=myapp&callback=showPosition">
+</script>
+    <script>
+        window.QMap = qq.maps;
+        if (window.location.protocol === 'https:') {
+ const httpsMeta = document.createElement("meta")
+ httpsMeta.setAttribute("http-equiv", 'Content-Security-Policy')
+ httpsMeta.setAttribute("content", 'upgrade-insecure-requests')
+ document.head.insertBefore(httpsMeta, document.head.firstChild);
+}
+    </script>
+</head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

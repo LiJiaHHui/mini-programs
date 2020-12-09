@@ -360,9 +360,6 @@ module.exports = function (webpackEnv) {
         PnpWebpackPlugin.moduleLoader(module),
       ],
     },
-    // externals:{
-    //     'QMap':'qq.maps'
-    //   },
     module: {
       strictExportPresence: true,
       rules: [

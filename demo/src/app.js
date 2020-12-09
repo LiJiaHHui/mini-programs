@@ -10,7 +10,7 @@ import Shop from './page/shop'
 class App extends Component {
     render() {
         return (
-            <div>
+            <div id='app'>
                 <Router>
                     <Switch>
                         <Route exact path="/" > <Home /></Route>
