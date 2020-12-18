@@ -1,66 +1,66 @@
 
 .page{
     background-color: #f2f2f2;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .title{
-    width: 6.25rem;
-    height: 2.5rem;
+    width: 3.25rem;
+    height: 1.5rem;
     margin:0 auto;
     color: red;
     font-weight: 700;
-    font-size: 1.68267rem;
+    font-size: .68267rem;
     text-align: center;
     position: sticky;
 }
 .info-card{
     // margin-bottom:;
-    margin:0 1rem  1.04133rem;
-    border-radius: 1.42667rem;
+    margin:0 .1rem  .04133rem;
+    border-radius: .42667rem;
     overflow: hidden;
-    padding:1.64rem 0;
+    padding:.64rem 0;
     background-color: #fff;
 }
 .item{
     display: flex;
-    height: 15.625rem;
+    height: 7.625rem;
     .selectPic{
         align-items: center;
-        height: 1.875rem;
-        width: 1.875rem;
-        margin-top: 3.125rem;
+        height: .875rem;
+        width: .875rem;
+        margin-top: 1.125rem;
     }
     .img{
-        height: 9.375rem;
-        width: 7.875rem;
-        margin-left: 3.125rem;
-        padding-top: 0.625rem;
+        height: 4.375rem;
+        width: 3.875rem;
+        margin-left: 1.125rem;
+        padding-top: 0.25rem;
     }
     .text{
         align-items: center;
         margin-right: auto;
         flex-direction: row;
-        font-size: 1.59733rem;
-        margin-left: 1.25rem;
+        font-size:.59733rem;
+        margin-left: .25rem;
         .price{
             color: red;
-            padding-top: 3.75rem;
-            font-size: 2.09733rem;
+            padding-top: 1.75rem;
+            font-size: 1.09733rem;
             font-weight: 700;
     }
     }
     .input-num{
-        margin-top :6.25rem;
+        margin-top :3.25rem;
         display: flex;
         flex-direction: row;
-        font-size: 1.875rem;
+        font-size: .75rem;
         .redNum{
             align-items: center;
         }
         .count{
             align-items: center;
             // margin-top :6.25rem;
-            padding:0 0.625rem;
+            padding:0 0.25rem;
         }
         .addNum{
             align-items: center;
@@ -75,7 +75,7 @@
     bottom: 15vh;
     left: 0;
     width: 100vw;
-    height: 5rem;
+    height: 2rem;
     background-color: #ffffff;
     border-top: #f1f1f1 solid 0.0625rem;
 }
@@ -84,28 +84,28 @@
     bottom: 6.25rem;
     .fixed-bottom-select{
         align-items: center;
-        height: 1.875rem;
-        width: 1.875rem;
-        margin-top: 1.25rem;
-        margin-left: 0.625rem;
+        height: .875rem;
+        width: .875rem;
+        margin-top: .25rem;
+        margin-left: 0.25rem;
     }
     .fixed-bottom-text{
         // flex: 1;
         text-align: center;
-        margin-top:1.25rem;
-        width: 6.25rem;
-        font-size: 1.59733rem;
+        margin-top:.25rem;
+        width: 3.25rem;
+        font-size: .59733rem;
     }
     .sum-box{
-        margin-left: 3.125rem;
-        font-size: 1.59733rem;
+        margin-left: 1.125rem;
+        font-size: .69733rem;
         color: #808086;
         .sum-price{
-            font-size: 1.59733rem;
+            font-size: .69733rem;
             
         }
         .sum-price-num{
-            font-size: 2.09733rem;
+            font-size: 1.09733rem;
             color: black;
             font-weight: 700;
         }
@@ -114,19 +114,20 @@
 
 
 .fixed-bottom-button{
-    position: relative;
-    left: 19rem;
-    margin-top: 0.9375rem;
+    position: absolute;
+    top: .4rem;
+    right: .3375rem;
+    margin-top: 0.3375rem;
     border: red solid 0.125rem;
     border-radius: 2.088rem;
-    width: 12.84533rem;
-    height: 4.176rem;
+    width: 3.84533rem;
+    height: 1.176rem;
     background-color: red;
     color: #fff;
-    font-size: 1.59733rem;
+    font-size: .59733rem;
     .fixed-bottom-button-text
     {   text-align: center;
-        margin-top: 0.625rem;
+        // margin-top: 0.25rem;
     }
 }
 

@@ -1,0 +1,253 @@
+.page{
+    color: #3e3e3e;
+    background: #f9f9f9;
+    margin-bottom: 5rem;
+}
+.shop-select-search{
+    display: flex;
+    flex-direction: row;
+    padding: .1rem .5rem .1rem;
+    .shop-select-search-box{
+        flex: 1;
+        height: 1.36533rem;
+        padding: 0 .42667rem;
+        border-radius: 1.68267rem;
+        background: #f4f6f7;
+        display: flex;
+        flex-direction: row;
+        .input{
+            width: 100%;
+            height: 1.36533rem;
+            border: 0;
+            outline: 0;
+            font-size: .612rem;
+            background-color: transparent;
+            
+        }
+        .icon{
+                width: 1rem;
+                height: 1rem;
+                margin-top: .1rem;
+            }
+    }
+    .shop-select-search-btn{
+        width: 3.85867rem;
+        height: 1.56533rem;
+        margin-left: .32rem;
+        border-radius: .9267rem;
+        font-size: .612rem;
+        line-height: 1.56533rem;
+        text-align: center;
+        
+        color: #fff;
+        background: #f32525;
+    }
+}
+.shop-select-chooselocation{
+    display: flex;
+    flex-direction: column;
+    padding: .1rem .5rem;
+    .shop-select-chooselocation-row{
+        display: flex;
+        align-items: center;
+        font-size: .69733rem;
+        // color: #3e3e3e;
+        flex-direction: row;
+        font-weight: 700;
+        justify-content: space-between;
+    }
+    .shop-select-chooselocation-address{
+        display: flex;
+        flex-direction: row;
+        
+        font-size: .6933rem;
+        overflow: hidden;
+        color: #c3c3c3;
+        white-space: nowrap;
+        // color: rgba(0, 0, 0, 0.85);
+        align-items: center;
+    }
+}
+.user-info-card{
+    // margin-bottom: .04133rem;
+    margin:0 .1rem  .04133rem;
+    border-radius: .42667rem;
+    overflow: hidden;
+    padding:.64rem 0;
+    background-color: #fff;
+}
+.shop-desc-card-component{
+    display: flex;
+    flex-direction: column;
+    .shop-desc-card-default{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .69733rem;
+    // color: #3e3e3e;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: .1rem .2rem;
+    .shop-desc-card-set-btn{
+        width: 3.47467rem;
+        height: 1.3867rem;
+        border: .02133rem solid #f32525;
+        border-radius: 1.3867rem;
+        font-size: .62667rem;
+        font-weight: 700;
+        line-height: 1.23867rem;
+        text-align: center;
+        color: #f22525;
+        }
+    }
+    .shop-desc-card-content-pic{
+    display: flex;
+    padding: 0 1rem;
+        .mode-scaletofill{
+        width: 4.47733rem;
+        height: 4.47733rem;
+        background-color: #eef0f0;
+        }
+    }
+    .shop-desc-card-content-info{
+        display: flex;
+        flex-direction: column;
+        padding-left: .1rem;
+        .shop-desc-card-content-info-name{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: .704rem;
+            font-weight: 600;
+            font-size: .512rem;
+            line-height: .404rem;
+            vertical-align: middle;
+            color: #3e3e3e;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-bottom: 1.4rem ;
+            .shop-desc-card-content-info-name-tag-green{
+                // height: .704rem;
+                padding:.556rem;
+                margin-right: .17067rem;
+                border-radius: .64933rem;
+                // font-size: .02667rem;
+                line-height: .04rem;
+                text-align: center;
+                vertical-align: middle;
+                color: #fff;
+                background: #73ce14;
+                font-weight: 600;
+                    
+            }
+        }
+        
+    }
+}
+.icon{
+    width: .8rem;
+    height: .8rem;
+}
+.shop-desc-card-content-info-tags{
+    display: flex;
+    flex-direction: row;
+    .shop-desc-card-content-info-tags-item{
+        box-sizing: border-box;
+        height: .68rem;
+        width: 2.5rem;
+        margin-right: .556rem;
+        border: 0.04267rem solid rgba(233, 88, 88, 0.5);
+        border-radius: .54933rem;
+        font-size: .42667rem;
+        line-height: .48267rem;
+        color: #e95a5a;
+        text-align: center;
+    }
+}
+.shop-desc-card-content-info-time{
+    display: flex;
+    flex-direction: row;
+    padding-top:.5rem;
+    .shop-desc-card-content-info-text{
+        font-size: .46933rem;
+        color: #3e3e3e;
+        padding-left:.6rem ;
+        white-space: nowrap;
+    }
+}
+.shop-desc-card-content-info-btns{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - .59733rem);
+    height: 2.89867rem;
+    margin: .512rem auto 0;
+    border-top: .04267rem solid #f4f6f7;
+    .shop-desc-card-content-info-btns-btn{
+        flex: 1;
+        padding-top: .5rem ;
+        justify-content: center;
+        align-items: center;
+        font-size: .62rem;
+        color: #3e3e3e;
+        border-top: 1px solid #f5f7f8;
+        text-align: center;;
+    }
+}
+.shop-select-store-box-list-navbar{
+    display: flex;
+    flex-direction: row;
+    .shop-select-store-box-list-navbar-item{
+        flex-shrink: 0;
+        font-weight: 700;
+        font-size: .512rem;
+        line-height: .536rem;
+        text-align: center;
+        flex: 1;
+    }
+}
+.shop-list-card-component{
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 2.09067rem);
+    padding: .85333rem .576rem;
+    margin: 0 auto;
+    border-bottom: .04267rem solid #f4f6f7;
+    background-color: #fff;
+    .shop-item-pic{
+        width: 5.64533rem;
+        height: 5.64533rem;
+        border-radius: .256rem;
+    }
+    .shop-list-card-title-text{
+    max-width: 5.66667rem;
+    font-weight: 600;
+    font-size: .79733rem;
+    color: #3e3e3e;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+}
+.shop-item-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: .704rem;
+    vertical-align: middle;
+    color: #3e3e3e;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .shop-list-card-title-text{
+        max-width: 5.66667rem;
+        font-weight: 600;
+        font-size: .79733rem;
+        color: #3e3e3e;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .shop-list-card-content-info-text{
+        font-size: .56933rem;
+        color: #3e3e3e;
+        white-space: nowrap;
+    }
+}

@@ -4,7 +4,7 @@
     overflow: hidden;
 }
 .nav{
-    height: 6.25rem;
+    height: 3.25rem;
     width: 100%;
     background-color: #2cbafe;
     display: flex;
@@ -13,67 +13,70 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0.625rem;
+        padding: 0.425rem 0.625rem 0;
         .info-text{
-            font-size: 1.26933rem;
+            font-size: .26933rem;
             color: #fff;
-            padding-top: .2rem;
+            padding-top: .1rem;
             white-space: nowrap;
         }
         .nav-search{
-            width: 20.19733rem;
-            height: 2.28rem;
-            border-radius: .96133rem;
+            width: 10.19733rem;
+            height: 1.28rem;
+            border-radius: .36133rem;
             background: #fff;
+            .nav-img{
+                padding-top: .2rem;
+            }
         }
     }
     .nav-text{
         font-weight: 400;
-        font-size: 1.5067rem;
+        font-size: .7067rem;
         color: #fff!important;
-        padding-top: 0.625rem;
+        padding-top: 0.325rem;
         display: flex;
         .right{
             position: absolute;
-            right: 1rem;
+            right: 1.1rem;
         }
     }
 }
 .nav-text-select{
     font-weight: 700;
-    font-size: 1.81067rem;
+    font-size: .81067rem;
     color: #fff!important;
 }
 .container-box{
     align-items: center;
-    width: 15.31733rem;
-    height: 9.94933rem;
+    width: 7.31733rem;
+    height: 5.94933rem;
     border: 0.164rem solid rgb(44, 186, 254);
      width: calc(95.7vw - 1.128rem); 
      border-radius: 0.328rem;
-     margin-left: 1.25rem;
+     margin-left: .9rem;
      display: flex;
      flex-direction: row;
-     margin-top: 0.625rem;
+     margin-top: 0.325rem;
      overflow: hidden;
      .container-img{
-        height: 10rem;
-        width: 9.375rem;
-        padding: 0.625rem;
+        height: 5rem;
+        width: 5.375rem;
+        padding: 0.125rem;
     }
      .container-box-right{
-        width: 45rem;
-        height: 9.94933rem;
-        margin-left: -0.625rem;
+        width: 13rem;
+        height: 3.94933rem;
+        margin-left: -0.325rem;
         display: flex;
         flex-direction: column;
         align-content: space-between;
         .container-name{
-            line-height: 0.72533rem;
+            line-height: 0.32533rem;
             white-space: normal;
-            font-size: 1.39733rem;
-            padding-left: 1.25rem;
-            margin-top: 1.25rem;
+            font-size: .69733rem;
+            padding-left: .5rem;
+            margin-top: .25rem;
         }
 
     }
@@ -82,51 +85,51 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 4.375rem 1.25rem;
-    line-height: 2.72533rem;
+    margin: 2.375rem .2rem;
+    line-height: 1.72533rem;
     .container-mark{
-        font-size: 1.268rem;
+        font-size: .68rem;
         font-weight: 600;
         color: red;
-        margin-top: 0.375rem;
+        margin-top: 0.175rem;
         .container-prices{
             color: red;
-            font-size: 1.768rem;
+            font-size: .768rem;
             font-weight: 600;
         }
     }
     
     .container-add{
-        height: 2.25rem;
-        width: 2.25rem;
-        flex: 0 0 1.024rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        flex: 0 0 .024rem;
         text-align: center;
-        margin-top:0.625rem;
+        margin-top:0.325rem;
         }
 }
 
 .listPic{
     width: 100vw;
-    height: 25rem;
-    margin: 1.25rem 0;
+    height: 12rem;
+    margin: .25rem 0;
 }
 
 .imgs{
     width: 100%;
-    height: 16.016rem;
-    padding:0 1.25rem;
+    height: 7.016rem;
+    padding:.2rem;
 }
 
 .card{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-     margin-bottom: 6rem;
+     margin-bottom: 3rem;
      width: 100%;
     padding: 0.06933rem;
     .card-item{
         border: 0.164rem solid rgb(44, 186, 254);
-        height: 21.6875rem;
+        height: 9.6875rem;
         width: calc((100vw - 2.552rem) / 2);
         border-radius: 0.625rem;
         display:flex;
@@ -137,7 +140,7 @@
             font-weight: 700;
             line-height: 0.72533rem;
             white-space: normal;
-            font-size: 1.39733rem;
+            font-size: .69733rem;
             padding-left: 1.25rem;
         }
 
@@ -147,25 +150,25 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 0.625rem 1.25rem;
-            line-height: 2.72533rem;
+            margin: 0.325rem 1.3rem;
+            line-height: 1.72533rem;
             .mark{
-                font-size: 1.268rem;
+                font-size: .68rem;
                 font-weight: 600;
                 color: red;
-                margin-top: 0.375rem;
+                margin-top: 0.1375rem;
                 .prices{
                     color: red;
-                    font-size: 1.768rem;
+                    font-size: .768rem;
                     font-weight: 600;
                 }
             }
             .add{
-                height: 2.25rem;
-                width: 2.25rem;
-                flex: 0 0 1.024rem;
+                height: 1.25rem;
+                width: 1.25rem;
+                flex: 0 0 .024rem;
                 text-align: center;
-                margin-top:0.625rem ;
+                margin-top:0.325rem ;
             }
         }
 
