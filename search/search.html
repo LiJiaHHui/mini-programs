@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>搜搜~</title>
+</head>
+<body>
+  <div class="search_part">
+    <img src="./img/Google.gif" width=33%/>
+    <form class="search_bar">
+      <div class="si">
+        <input id="search_input" type="text"
+        onkeyup="kw_suggest()" autocomplete="off" placeholder="✎...dream it possible">
+        <input type="text" onclick="jumpPage()" id="search_submit" value="🔍">
+      
+      <div id="suggest" style="visibility:hidden;width: 90%;height: 410px;">
+      </div>
+    </div>
+    </form>
+    <div class="box" id="btn">
+      <a id="blog" href="#"></a>
+      <p><img class="icon" src="./img/icon.png"></p>
+      <p id="blogUrl" class="url"></p>
+    </div>
+
+    <div class="box" id="btn1">
+      <a id="google" href="#"></a>
+      <p><img class="icon" src="./img/google.png"></p>
+      <p id="googleUrl" class="url"></p>
+    </div>
+
+    <div class="box" id="btn2" >
+      <a id="baiDu" href="#"></a>
+      <p><img class="icon" src="./img/baiDu.png"></p>
+      <p id="baiDuUrl" class="url"></p>
+    </div>
+
+    <div class="box" id="btn3">
+      <a id="biLi" href="#"></a>
+      <p><img class="icon" src="./img/Bilibili.png"></p>
+      <p id="biLiUrl" class="url"></p>
+    </div>   
+  </div>
+</body>
+<script src="./js/index.js"></script>
+<script>
+  let sug=document.getElementById('suggest')
+  let timer=null
+  function kw_suggest(){
+    let kw=document.getElementById('search_input').value
+    if(kw.length==0){
+    cleanSug()
+    }
+    // 添加防抖
+    if(this.timer){
+      clearTimeout(this.timer)
+    }
+    this.timer=setTimeout(()=>{
+      let script=document.createElement('script')
+      script.type='text/javascript';
+      script.src='https://www.baidu.com/su?&wd='+
+      encodeURI(kw.trim())+"&p=3&cb=handleSuggestion";
+      document.body.appendChild(script)
+    },100)
+  } 
+  function handleSuggestion(res){
+    // 清除之前的结果
+    cleanSug()
+    if(res.s.length>0){
+      sug.style.visibility='visible'
+        for(let i=0;i<res.s.length;i++){
+          let li=document.createElement('li')
+          li.innerHTML=res.s[i]
+          li.style.listStyle='none'
+          sug.appendChild(li)
+        }
+    }
+  }
+  // 清除输入框内容
+  function cleanSug(){
+    let liNum=sug.childNodes.length
+    sug.style.visibility='hidden'
+    // 注意从最后一个开始移除
+    for(let i=liNum-1;i>=0;i--){
+      sug.removeChild(sug.childNodes[i])
+    }
+    // 自执行函数，清除script标签
+    (function () {
+        var s = document.querySelectorAll('script');
+        for (var i = 1, len = s.length; i < len; i++) {
+          document.body.removeChild(s[i]);
+        }
+      })()
+  }
+  // 事件委托，点击搜素结果跳转
+  sug.addEventListener('click',function(e){
+    if(e.target.nodeName.toLowerCase()==='li'){
+      document.getElementById('search_input').value=e.target.innerText
+      jumpPage()
+    }
+  })
+  // 当前页面打开
+  function jumpPage() {
+    let kw=document.getElementById('search_input').value
+    console.log('kw',kw)
+      window.open(`https://www.baidu.com/s?word=${encodeURI(search_input.value)}`,'_self');
+  }
+</script>
+</html>

@@ -2,7 +2,7 @@
   document.getElementById("btn").onclick = function () {
     //根据id获取超链接,设置href属性
     var aObj = document.getElementById("blog");
-    aObj.href = "https://www.citrons.cn";
+    aObj.href = "https://lijiahhui.github.io/";
     
    
   };
@@ -24,7 +24,3 @@
     aObj.href = "https://www.bilibili.com";
    
   };
-  $("#blogUrl").html("Citrons");
-  $("#googleUrl").html("Google");
-  $("#baiDuUrl").html("BaiDu");
-  $("#biLiUrl").html("BiLiBiLi");
